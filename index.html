@@ -399,7 +399,7 @@ function renderResult() {
   const st = typeStat(code);
   const sameHtml = st
     ? `<p class="big">${st.pct}%<small> 가 나와 같은 유형</small></p>
-       <p class="note">참여자 ${st.total.toLocaleString("ko-KR")}명 기준 · 16개 유형 중 ${st.rank}번째로 많아요</p>`
+       <p class="note">16개 유형 중 ${st.rank}번째로 많아요</p>`
     : `<p class="note">참여자가 ${MIN_VOTES}명 이상 모이면 나와 같은 유형의 비율을 보여드려요.</p>`;
 
   const m = MATCH[code];
